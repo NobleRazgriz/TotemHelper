@@ -1,0 +1,6 @@
+## Interface: 70100
+## Title: TotemHelper
+## Notes: This addon will eventually yell at any elemental shaman that doesn't have their totem buffs active
+
+TotemHelper.xml
+TotemHelper.lua
