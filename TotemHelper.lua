@@ -8,9 +8,18 @@
 --		print('Congratulations on reaching level ' .. arg1 .. ', ' .. UnitName("Player") .. '! You gained ' .. arg2 .. ' HP and ' .. arg3 .. ' MP!')
 --	end)
 
+--local TotemFrame = CreateFrame("Frame")
+--TotemFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+--TotemFrame:SetScript("OnEvent",
+--    function(self, event, ...)
+--        local arg1 = ...
+--        print ("holla");
+--    end)
+    
 local TotemFrame = CreateFrame("Frame")
-TotemFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+TotemFrame:RegisterEvent("UNIT_AURA")
 TotemFrame:SetScript("OnEvent",
-    function(self, event)
+    function(self, event, ...)
+        local arg1 = ...
         print ("holla");
     end)
