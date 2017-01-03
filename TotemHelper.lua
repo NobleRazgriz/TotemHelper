@@ -15,9 +15,20 @@
 --        local arg1 = ...
 --        print ("holla");
 --    end)
+
+-- Fires on literally any buff change at all
+-- i.e. ele totems, ghost wolf, walking away from ele totems, etc.
+--local TotemFrame = CreateFrame("Frame")
+--TotemFrame:RegisterEvent("UNIT_AURA")
+--TotemFrame:SetScript("OnEvent",
+--    function(self, event, ...)
+--        local arg1 = ...
+--        print ("holla");
+--    end)
     
+
 local TotemFrame = CreateFrame("Frame")
-TotemFrame:RegisterEvent("UNIT_AURA")
+TotemFrame:RegisterEvent("PLAYER_TOTEM_UPDATE")
 TotemFrame:SetScript("OnEvent",
     function(self, event, ...)
         local arg1 = ...
