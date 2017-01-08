@@ -1,0 +1,26 @@
+EVENT CHARACTERIZATION
+PLAYER_TOTEM_UPDATE
+    when 8totems are placed
+    when totems time out
+    does NOT fire when exiting range
+UNIT_AURA
+    when totems are placed
+    range is exited
+    range is reentered(unknown what the reentry range is)
+    fires TWICE when totems time out(and stood in for full duration)
+UNIT_SHAPESHIFT_FORM
+    once when entering ghost wolf form
+    TWICE when exiting ghost wolf form
+
+
+
+
+
+
+other interesting events
+UNIT_SPELLCAST_SUCCEEDED
+UPDATE_SHAPESHIFT_FORM
+
+
+
+
